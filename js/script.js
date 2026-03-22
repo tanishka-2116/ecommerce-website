@@ -35,3 +35,6 @@ searchInput.addEventListener("keyup", function () {
         product.style.display = name.includes(value) ? "block" : "none";
     });
 });
+function showMessage() {
+    document.getElementById("success-message").style.display = "block";
+}
