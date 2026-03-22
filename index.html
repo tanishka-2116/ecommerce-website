@@ -2,15 +2,75 @@
 <html>
 <head>
     <title>E-commerce Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9800, #ffcc80);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background: white;
+            color: #333;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #333;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-<h1>E-commerce Website</h1>
+<div class="container">
+    <h1>🛍️ E-commerce Website</h1>
+    <h2>Select Your Role</h2>
 
-<h2>Select Role</h2>
+    <button class="btn" onclick="location.href='user/login.html'">
+        User
+    </button>
 
-<a href="user/login.html">User</a><br><br>
-<a href="admin/admin-login.html">Admin</a>
+    <button class="btn" onclick="location.href='admin/admin-login.html'">
+        Admin
+    </button>
+</div>
+
+<div class="footer">
+    <p>© 2026 | Group 2 | Tanishka & Eshita</p>
+</div>
 
 </body>
 </html>
