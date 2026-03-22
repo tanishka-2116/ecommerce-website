@@ -190,3 +190,17 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+.success-box {
+    display: none;
+    margin: 30px auto;
+    padding: 20px;
+    width: 300px;
+    background: #e8f5e9;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.success-box h3 {
+    color: #2e7d32;
+}
