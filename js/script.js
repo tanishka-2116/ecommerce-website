@@ -37,4 +37,8 @@ searchInput.addEventListener("keyup", function () {
 });
 function showMessage() {
     document.getElementById("success-message").style.display = "block";
+
+    setTimeout(() => {
+        window.location.href = "dashboard.html";
+    }, 3000);
 }
