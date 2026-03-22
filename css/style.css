@@ -1,18 +1,21 @@
+/* GENERAL */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
+/* NAVBAR */
 nav {
     background-color: #333;
-    padding: 10px;
+    padding: 15px;
+    text-align: center;
 }
 
 nav a {
     color: white;
-    margin-right: 15px;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -21,45 +24,21 @@ nav a:hover {
     color: #ff9800;
 }
 
+/* HEADINGS */
 h2 {
-    color: #333;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.product {
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: 220px;
-    display: inline-block;
-    margin: 15px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-button {
-    background-color: #ff9800;
-    border: none;
-    padding: 8px 12px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #e68900;
-}
+/* LOGIN / REGISTER BOX */
 .login-container {
-    width: 300px;
+    width: 320px;
     margin: 100px auto;
     padding: 25px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     text-align: center;
-}
-
-.login-container h2 {
-    margin-bottom: 20px;
 }
 
 .login-container input {
@@ -82,4 +61,65 @@ button:hover {
 
 .login-container button:hover {
     background: #e68900;
+}
+
+/* PRODUCT GRID */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* PRODUCT CARD */
+.product {
+    width: 220px;
+    margin: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* PRODUCT IMAGE */
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* BUTTONS */
+button {
+    background-color: #ff9800;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+/* CART / ORDER TEXT */
+p {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background: #333;
+    color: white;
 }
