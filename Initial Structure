@@ -1,19 +1,29 @@
-user/
+ecommerce-project/
 │
-├── index.html
-├── login.html
-├── register.html
-├── dashboard.html
-├── product.html
-├── cart.html
-├── order.html
-├── payment.html
-├── orders.html
+├── user/              ← (YOU will work here)
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── product.html
+│   ├── cart.html
+│   ├── order.html
+│   ├── payment.html
+│   ├── orders.html
+│
+├── admin/             ← (Teammate will give this)
+│   ├── admin-login.html
+│   ├── admin-dashboard.html
+│   ├── add-product.html
+│   ├── view-orders.html
+│   ├── view-customers.html
 │
 ├── css/
-│   └── style.css
+│   └── style.css      ← shared
 │
 ├── js/
-│   └── script.js
+│   └── script.js      ← shared
 │
 ├── images/
+│
+└── index.html         ← main entry (optional)
