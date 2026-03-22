@@ -1,0 +1,8 @@
+<div class="product">
+    <img src="../images/shoe.jpg" width="150">
+    <h3>Shoes</h3>
+    <p>Price: ₹1000</p>
+    <a href="product.html">
+        <button>View Product</button>
+    </a>
+</div>
