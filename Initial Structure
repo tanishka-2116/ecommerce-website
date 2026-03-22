@@ -1,0 +1,19 @@
+user/
+│
+├── index.html
+├── login.html
+├── register.html
+├── dashboard.html
+├── product.html
+├── cart.html
+├── order.html
+├── payment.html
+├── orders.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
