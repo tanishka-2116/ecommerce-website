@@ -17,27 +17,46 @@ Module: USER SIDE
     <title>Product Details</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-<nav>
-    <a href="dashboard.html">Home</a>
-    <a href="cart.html">Cart</a>
-    <a href="orders.html">Orders</a>
-    <a href="login.html">Logout</a>
+<nav class="navbar">
+    <h2 class="logo">🛍️ ShopEasy</h2>
+
+    <div class="nav-links">
+        <a href="dashboard.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="orders.html">Orders</a>
+        <a href="login.html">Logout</a>
+    </div>
 </nav>
 
 <hr>
 
-<h2>Product Details</h2>
+<div class="product-page">
 
-<div class="product">
-    <h3>Shoes</h3>
-    <p>Price: ₹1000</p>
-    <p>Description: Comfortable and stylish shoes perfect for daily use.</p>
+    <!-- PRODUCT IMAGE -->
+    <div class="product-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+    </div>
 
-    <a href="cart.html">
-        <button>Add to Cart</button>
-    </a>
+    <!-- PRODUCT DETAILS -->
+    <div class="product-details">
+        <h2>Shoes</h2>
+
+        <p class="price">₹1000</p>
+
+        <p>
+            Comfortable and stylish shoes perfect for daily wear. 
+            Lightweight, durable and designed for maximum comfort.
+        </p>
+
+        <br>
+
+        <button onclick="location.href='cart.html'">Add to Cart</button>
+        <button onclick="location.href='order.html'">Buy Now</button>
+    </div>
+
 </div>
 
 </body>
