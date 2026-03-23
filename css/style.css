@@ -204,3 +204,23 @@ footer {
 .success-box h3 {
     color: #2e7d32;
 }
+.product-page {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.product-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.product-details {
+    max-width: 400px;
+}
+
+.price {
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+}
