@@ -248,3 +248,24 @@ footer {
     text-align: center;
     color: green;
 }
+.product-page {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.product-image img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-details {
+    max-width: 400px;
+}
+
+.price {
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+}
