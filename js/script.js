@@ -17,8 +17,8 @@ products.forEach(product => {
             <img src="${product.image}">
             <h3>${product.name}</h3>
             <p>${product.price}</p>
-            <button>View</button>
-        </div>
+<button onclick="location.href='product.html'">View</button>
+</div>
     `;
 });
 
