@@ -20,6 +20,7 @@ Module: USER SIDE
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
     <h2 class="logo">🛍️ ShopEasy</h2>
 
@@ -33,23 +34,19 @@ Module: USER SIDE
 
 <hr>
 
+<!-- PRODUCT SECTION -->
 <div class="product-page">
 
-    <!-- PRODUCT IMAGE -->
     <div class="product-image">
-        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+        <img id="product-img">
     </div>
 
-    <!-- PRODUCT DETAILS -->
     <div class="product-details">
-        <h2>Shoes</h2>
+        <h2 id="product-name"></h2>
 
-        <p class="price">₹1000</p>
+        <p class="price" id="product-price"></p>
 
-        <p>
-            Comfortable and stylish shoes perfect for daily wear. 
-            Lightweight, durable and designed for maximum comfort.
-        </p>
+        <p id="product-desc"></p>
 
         <br>
 
@@ -58,6 +55,60 @@ Module: USER SIDE
     </div>
 
 </div>
+
+<!-- SCRIPT -->
+<script>
+const params = new URLSearchParams(window.location.search);
+const product = params.get("product");
+
+const data = {
+    shoes: {
+        name: "Shoes",
+        price: "₹1000",
+        img: "https://cdn-icons-png.flaticon.com/512/892/892458.png",
+        desc: "Comfortable and stylish shoes perfect for daily wear."
+    },
+    watch: {
+        name: "Watch",
+        price: "₹2000",
+        img: "https://cdn-icons-png.flaticon.com/512/992/992700.png",
+        desc: "Elegant wrist watch with modern design."
+    },
+    bag: {
+        name: "Bag",
+        price: "₹1500",
+        img: "https://cdn-icons-png.flaticon.com/512/3082/3082035.png",
+        desc: "Durable and stylish travel bag."
+    },
+    phone: {
+        name: "Phone",
+        price: "₹15000",
+        img: "https://cdn-icons-png.flaticon.com/512/15/15874.png",
+        desc: "Smartphone with powerful features."
+    },
+    headphones: {
+        name: "Headphones",
+        price: "₹2000",
+        img: "https://cdn-icons-png.flaticon.com/512/727/727245.png",
+        desc: "High quality sound headphones."
+    },
+    laptop: {
+        name: "Laptop",
+        price: "₹50000",
+        img: "https://cdn-icons-png.flaticon.com/512/1041/1041916.png",
+        desc: "High performance laptop for work and gaming."
+    }
+};
+
+const selected = data[product];
+
+if (selected) {
+    document.getElementById("product-name").innerText = selected.name;
+    document.getElementById("product-price").innerText = selected.price;
+    document.getElementById("product-img").src = selected.img;
+    document.getElementById("product-desc").innerText = selected.desc;
+}
+</script>
 
 </body>
 </html>
