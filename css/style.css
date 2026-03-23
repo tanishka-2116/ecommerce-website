@@ -224,3 +224,27 @@ footer {
     font-size: 22px;
     font-weight: bold;
 }
+.cart-container {
+    width: 60%;
+    margin: auto;
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    margin: 15px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.total {
+    text-align: center;
+    color: green;
+}
