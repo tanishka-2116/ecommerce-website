@@ -17,6 +17,7 @@ Module: USER SIDE
     <title>My Cart</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
 <nav>
@@ -30,18 +31,33 @@ Module: USER SIDE
 
 <h2>My Cart</h2>
 
-<div class="product">
-    <h3>Shoes</h3>
-    <p>Price: ₹1000</p>
+<div class="cart-container">
+
+    <div class="cart-item">
+        <img src="https://source.unsplash.com/150x100/?shoes">
+        <div>
+            <h3>Shoes</h3>
+            <p>Price: ₹1000</p>
+            <p>Quantity: 1</p>
+        </div>
+    </div>
+
+    <div class="cart-item">
+        <img src="https://source.unsplash.com/150x100/?watch">
+        <div>
+            <h3>Watch</h3>
+            <p>Price: ₹2000</p>
+            <p>Quantity: 1</p>
+        </div>
+    </div>
+
 </div>
 
-<br>
+<h3 class="total">Total: ₹3000</h3>
 
-<h3>Total: ₹1000</h3>
-
-<a href="order.html">
-    <button>Proceed to Order</button>
-</a>
+<div style="text-align:center;">
+    <button onclick="location.href='order.html'">Proceed to Order</button>
+</div>
 
 </body>
 </html>
